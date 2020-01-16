@@ -42,7 +42,7 @@ let usuarioSchema = new Schema({
     }
 });
 
-usuarioSchema.plugin(uniqueValidator, { message: '{PATH} DEBE SER UNICO' });
+usuarioSchema.plugin(uniqueValidator, { message: '{PATH} debe ser único' });
 
 usuarioSchema.methods.toJSON = function() {
     let user = this;
