@@ -1,0 +1,22 @@
+version: "3"
+services:
+  nodejs:
+    build:
+        context: /
+        dockerfile: Dockerfile
+    #command: "node server/server.js"
+    tty: true
+    restart: unless-stopped
+    ports:
+      - 3000:3000
+    #volumes:
+    #  - "/var/run/docker.sock:/var/run/docker.sock"
+    #  - "psql-data-vc:/var/lib/postgresql/9.5/main"
+    #  - "./valuechain/www/:/var/www/html"
+    #  - "./deployer/app/results/:/var/www/html/resultsdeployment"
+    #  - "./configuration/logs:/logs"
+  mongo:
+    image: mongo:4.2.3
+    restart: unless-stopped
+    ports:
+      - 27017:27017

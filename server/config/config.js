@@ -32,8 +32,11 @@ if (process.env.NODE_ENV === 'dev') {
 // commented to use local storage for Jenkins environment
 //process.env.URLDB = urlDB;
 
-//
-process.env.urlDB = 'mongodb://127.0.0.1:27017/cafe';
+//local purpose in laptop
+//process.env.urlDB = 'mongodb://127.0.0.1:27017/cafe';
+
+//deployin with docker compose 
+process.env.urlDB = 'mongodb://mongo:27017/cafe';
 
 // ==================
 //Google client id

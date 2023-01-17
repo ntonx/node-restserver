@@ -1,9 +1,11 @@
+
 const express = require('express');
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 //constantes para la autenticacion del token de google
 const { OAuth2Client } = require('google-auth-library');
 const client = new OAuth2Client(process.env.CLIENT_ID);
+
 //Importación de la estructura de la base de datos mongodb
 const Usuario = require('../models/usuario');
 const app = express();
