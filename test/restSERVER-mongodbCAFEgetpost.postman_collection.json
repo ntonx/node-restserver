@@ -1,0 +1,267 @@
+{
+	"info": {
+		"_postman_id": "fa8c779b-3e9e-47ce-ab29-fe20ee8c07bf",
+		"name": "restSERVER-mongodbCAFEgetpost",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "7903016"
+	},
+	"item": [
+		{
+			"name": "usuario",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7InJvbGUiOiJVU0VSX1JPTEUiLCJlc3RhZG8iOnRydWUsImdvb2dsZSI6dHJ1ZSwiX2lkIjoiNjNjNjQ2Y2FkYmM0NGM2OWE0YjRiODUwIiwibm9tYnJlIjoiQW50b25pbyBQbGF0YSIsImVtYWlsIjoibnRvbng5QGdtYWlsLmNvbSIsImltZyI6Imh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hL0FFZEZUcDRZMEdxdXlXcVkyRFE4NFN4emtpSEQwOXVBYmVDWkFzMDUwZGJWX1E9czk2LWMiLCJfX3YiOjB9LCJpYXQiOjE2NzM5Mzg2NDAsImV4cCI6MTY3NDExMTQ0MH0.misKCZcGyHA1yyKnezI9uH5D6BJQN3dk3pty2wpFsNo",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:3000/usuario",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"usuario"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "producto",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7InJvbGUiOiJBRE1JTl9ST0xFIiwiZXN0YWRvIjp0cnVlLCJnb29nbGUiOnRydWUsIl9pZCI6IjYzYzY0ZDEzZGJjNDRjMWIwM2I0Yjg1MiIsIm5vbWJyZSI6IkFudG9uaW8gUGxhdGEiLCJlbWFpbCI6Im50b254OUBnbWFpbC5jb20iLCJpbWciOiJodHRwczovL2xoMy5nb29nbGV1c2VyY29udGVudC5jb20vYS9BRWRGVHA0WTBHcXV5V3FZMkRRODRTeHpraUhEMDl1QWJlQ1pBczA1MGRiVl9RPXM5Ni1jIiwiX192IjowfSwiaWF0IjoxNjczOTQwNTc4LCJleHAiOjE2NzQxMTMzNzh9._-cj4yIEIwTPnr_QBD2_YY0a-6lCoKMfdg6lVq7gVxs",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombre",
+							"value": "lapiz33",
+							"type": "text"
+						},
+						{
+							"key": "precioUni",
+							"value": "2222",
+							"type": "text"
+						},
+						{
+							"key": "descripcion",
+							"value": "es un lapiz",
+							"type": "text"
+						},
+						{
+							"key": "categoria",
+							"value": "63c64f51dbc44c2076b4b856",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/productos",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"productos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "producto",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7InJvbGUiOiJBRE1JTl9ST0xFIiwiZXN0YWRvIjp0cnVlLCJnb29nbGUiOnRydWUsIl9pZCI6IjYzOWQ2MmY0Mzc3ZWYyMjc0MDFmZjM5ZiIsIm5vbWJyZSI6IkFudG9uaW8gUGxhdGEiLCJlbWFpbCI6Im50b254OUBnbWFpbC5jb20iLCJpbWciOiJodHRwczovL2xoMy5nb29nbGV1c2VyY29udGVudC5jb20vYS9BRWRGVHA0WTBHcXV5V3FZMkRRODRTeHpraUhEMDl1QWJlQ1pBczA1MGRiVl9RPXM5Ni1jIiwiX192IjowfSwiaWF0IjoxNjczNzU1MzI4LCJleHAiOjE2NzM5MjgxMjh9.CUXoSmcjOKW6XDB6KA0A-hTTqLDjdyrJ8qwHACfLJqk",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "localhost:3000/productos/",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"productos",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "categoria",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7InJvbGUiOiJBRE1JTl9ST0xFIiwiZXN0YWRvIjp0cnVlLCJnb29nbGUiOnRydWUsIl9pZCI6IjYzYzY0ZDEzZGJjNDRjMWIwM2I0Yjg1MiIsIm5vbWJyZSI6IkFudG9uaW8gUGxhdGEiLCJlbWFpbCI6Im50b254OUBnbWFpbC5jb20iLCJpbWciOiJodHRwczovL2xoMy5nb29nbGV1c2VyY29udGVudC5jb20vYS9BRWRGVHA0WTBHcXV5V3FZMkRRODRTeHpraUhEMDl1QWJlQ1pBczA1MGRiVl9RPXM5Ni1jIiwiX192IjowfSwiaWF0IjoxNjczOTQwNTc4LCJleHAiOjE2NzQxMTMzNzh9._-cj4yIEIwTPnr_QBD2_YY0a-6lCoKMfdg6lVq7gVxs",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "descripcion",
+							"value": "internet33",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/categoria/",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"categoria",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "categoria",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7InJvbGUiOiJBRE1JTl9ST0xFIiwiZXN0YWRvIjp0cnVlLCJnb29nbGUiOnRydWUsIl9pZCI6IjYzYzY0ZDEzZGJjNDRjMWIwM2I0Yjg1MiIsIm5vbWJyZSI6IkFudG9uaW8gUGxhdGEiLCJlbWFpbCI6Im50b254OUBnbWFpbC5jb20iLCJpbWciOiJodHRwczovL2xoMy5nb29nbGV1c2VyY29udGVudC5jb20vYS9BRWRGVHA0WTBHcXV5V3FZMkRRODRTeHpraUhEMDl1QWJlQ1pBczA1MGRiVl9RPXM5Ni1jIiwiX192IjowfSwiaWF0IjoxNjczOTQwNTc4LCJleHAiOjE2NzQxMTMzNzh9._-cj4yIEIwTPnr_QBD2_YY0a-6lCoKMfdg6lVq7gVxs",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:3000/categoria",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"categoria"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "usuario1",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7InJvbGUiOiJVU0VSX1JPTEUiLCJlc3RhZG8iOnRydWUsImdvb2dsZSI6dHJ1ZSwiX2lkIjoiNjNjNjQ2Y2FkYmM0NGM2OWE0YjRiODUwIiwibm9tYnJlIjoiQW50b25pbyBQbGF0YSIsImVtYWlsIjoibnRvbng5QGdtYWlsLmNvbSIsImltZyI6Imh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hL0FFZEZUcDRZMEdxdXlXcVkyRFE4NFN4emtpSEQwOXVBYmVDWkFzMDUwZGJWX1E9czk2LWMiLCJfX3YiOjB9LCJpYXQiOjE2NzM5Mzg2NDAsImV4cCI6MTY3NDExMTQ0MH0.misKCZcGyHA1yyKnezI9uH5D6BJQN3dk3pty2wpFsNo",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombre",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "test@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "testtest",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/usuario",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"usuario"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "usuario2",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7InJvbGUiOiJBRE1JTl9ST0xFIiwiZXN0YWRvIjp0cnVlLCJnb29nbGUiOnRydWUsIl9pZCI6IjYzYzY0ZDEzZGJjNDRjMWIwM2I0Yjg1MiIsIm5vbWJyZSI6IkFudG9uaW8gUGxhdGEiLCJlbWFpbCI6Im50b254OUBnbWFpbC5jb20iLCJpbWciOiJodHRwczovL2xoMy5nb29nbGV1c2VyY29udGVudC5jb20vYS9BRWRGVHA0WTBHcXV5V3FZMkRRODRTeHpraUhEMDl1QWJlQ1pBczA1MGRiVl9RPXM5Ni1jIiwiX192IjowfSwiaWF0IjoxNjczOTQwNTc4LCJleHAiOjE2NzQxMTMzNzh9._-cj4yIEIwTPnr_QBD2_YY0a-6lCoKMfdg6lVq7gVxs",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombre",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "test3@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "testtest",
+							"type": "text"
+						},
+						{
+							"key": "role",
+							"value": "ADMIN_ROLE",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/usuario",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"usuario"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
