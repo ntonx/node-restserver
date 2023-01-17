@@ -18,8 +18,10 @@ app.use(express.static(path.resolve(__dirname, '../public')));
 //Configuración global de rutas
 app.use(require('./routes/index'));
 
-mongoose.connect(process.env.URLDB, {
-        useNewUrlParser: true,
+mongoose.connect(process.env.urlDB, {
+
+//mongoose.connect("mongodb://mongosservice:27017/cafe",{
+    useNewUrlParser: true,
         useUnifiedTopology: true,
         useCreateIndex: true
     }, (err, res) => {
@@ -29,4 +31,4 @@ mongoose.connect(process.env.URLDB, {
 
 );
 
-app.listen(process.env.PORT, () => { console.log("EScuchando en puerto 3000"); });
+app.listen(process.env.PORT, () => { console.log("Escuchando en puerto "+process.env.PORT ); });
