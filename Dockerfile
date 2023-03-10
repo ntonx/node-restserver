@@ -11,7 +11,7 @@
 
 # CREATE A PREVIOUS IMAGE CONTAINER
 
-FROM node:alpine as build
+FROM node:10.17.0 as build
 WORKDIR /usr/src/app
 COPY package.json package.json
 COPY server/ ./server
