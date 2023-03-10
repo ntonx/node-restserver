@@ -20,7 +20,7 @@ COPY uploads/ ./uploads
 RUN npm install
 
 
-FROM node:alpine as main
+FROM node:10.17.0-alpine as main
 COPY --from=build /usr/src/app /
 EXPOSE 3000
 CMD [ "node", "./server/server.js" ]
