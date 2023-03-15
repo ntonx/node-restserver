@@ -10,7 +10,7 @@ services:
     ports:
       - 3000:3000
   mongo:
-    image: mongo:4.4-nanoserver-1809
+    image: mongo:4-nanoserver-1809
     restart: unless-stopped
     ports:
       - 27017:27017
